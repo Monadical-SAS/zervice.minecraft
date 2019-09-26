@@ -5,6 +5,6 @@ services:
         image: openjdk:8
         command: bash -c "cd /opt/minecraft && java -Xms1G -Xmx1G -jar server.jar"
         volumes:
-            - ./data/13.3.1:/opt/minecraft
+            - ./data/minecraft:/opt/minecraft
         ports:
             - 25565:25565
